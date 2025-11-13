@@ -12,6 +12,7 @@
     "@mdi/font": "^7.4.47",
     "@nuxt/content": "^3.7.0",
     "@nuxt/eslint": "^1.9.0",
+    "@nuxtjs/seo": "^3.2.2",
     "eslint": "^9.35.0",
     "nuxt": "^4.1.2"
   },

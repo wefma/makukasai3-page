@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   appConfig: {
     header: {
       logo: {
-        light: '/logo.png',
-        dark: '/logo.png',
-        alt: 'Site logo',
+        light: "/logo.png",
+        dark: "/logo.png",
+        alt: "Site logo",
       },
     },
   },
@@ -14,8 +14,14 @@ export default defineNuxtConfig({
       sqliteConnector: "native",
     },
   },
-  modules: ["@nuxt/content", "@nuxt/eslint"],
-  css: ['~/assets/css/theme.css'],
+  modules: ["@nuxt/content", "@nuxt/eslint", "@nuxtjs/seo"],
+  site: {
+    url: "https://makukasai3.wefma.net",
+    name: "幕華祭永夜篇攻略",
+    defaultLocale: "ja",
+    indexable: true,
+  },
+  css: ["~/assets/css/theme.css"],
   devtools: { enabled: true },
   future: {
     compatibilityVersion: 4,
